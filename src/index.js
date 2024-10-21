@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App';// App 컴포넌트 import
+import AppRouter from './AppRouter';
+
 import reportWebVitals from './reportWebVitals';
 
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// )
+
+//React18부터 Rect.render()가 아닌 createRoot()를 먼저 사용한다.
+//<컴포넌트명 />을 이용해 컴포넌트를 사용한다.
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render(//ReactDOM이 내부 컴포넌트들을 'root'엘리먼트에 render함
   <React.StrictMode>
-    <App />
+    <AppRouter /> 
   </React.StrictMode>
 );
 
